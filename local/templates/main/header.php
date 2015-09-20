@@ -32,10 +32,13 @@
 
     <!-- Header -->
     <div id="header">
-        <?if(!CSite::InDir('/')):?><a href="/"><?endif;?>
-        <h1 id="logo"><a href="#">shoparound</a></h1>
-            <?if(!CSite::InDir('/')):?></a><?endif;?>
-
+        <h1 id="logo">
+            <a href="index.html">
+                <?if(!CSite::InDir('/')):?><a href="/"><?endif;?>
+                    <?$APPLICATION->IncludeComponent( "bitrix:main.include", "", Array( "COMPONENT_TEMPLATE" => ".default", "AREA_FILE_SHOW" => "file", "AREA_FILE_SUFFIX" => "inc", "EDIT_TEMPLATE" => "", "PATH" => SITE_TEMPLATE_PATH."/include_areas/logo.php" ));?>
+                    <?if(!CSite::InDir('/')):?></a><?endif;?>
+            </a>
+        </h1>
         <!-- Cart -->
         <div id="cart">
             <a href="#" class="cart-link">Your Shopping Cart</a>
@@ -49,11 +52,11 @@
         <!-- Navigation -->
         <div id="navigation">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">The Store</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="phone"><?$APPLICATION->IncludeComponent( "bitrix:main.include", "", Array( "COMPONENT_TEMPLATE" => ".default", "AREA_FILE_SHOW" => "file", "AREA_FILE_SUFFIX" => "inc", "EDIT_TEMPLATE" => "", "PATH" => SITE_TEMPLATE_PATH."/include_areas/phonenumber.php" ));?></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Жанры</a></li>
+                <li><a href="#">Авторы</a></li>
+                <li><a href="#">О нас</a></li>
             </ul>
         </div>
         <!-- End Navigation -->

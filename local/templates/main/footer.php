@@ -23,6 +23,9 @@
     <p class="right">
         &copy; <?php echo date(Y);?> Shop Around.
     </p>
+    </p><p class="center">
+        <?$APPLICATION->IncludeComponent( "bitrix:main.include", "", Array( "COMPONENT_TEMPLATE" => ".default", "AREA_FILE_SHOW" => "file", "AREA_FILE_SUFFIX" => "inc", "EDIT_TEMPLATE" => "", "PATH" => SITE_TEMPLATE_PATH."/include_areas/phonenumber.php" ));?>
+    </p>
 </div>
 <!-- End Footer -->
 

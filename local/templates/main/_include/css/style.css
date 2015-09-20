@@ -9,7 +9,14 @@ body {
 input, textarea, select { font-family: "Trebuchet MS", Arial, sans-serif; font-size:12px; }
 
 .field { background:#ebebeb; border:solid 1px #dedede; padding:2px;}
-
+.phone {
+	padding: 0px 15px;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 64px;
+	height: 64px;
+	float: left;
+}
 a img { border:0; }
 
 a { color:#8b0000; text-decoration: underline; cursor:pointer; }
@@ -17,6 +24,10 @@ a:hover { color:#666; text-decoration: none; }
 
 .left, .alignleft { float:left; display:inline; }
 .right, .alignright { float:right; display:inline; }
+.center {
+	display: inline;
+	padding-left: 10%;
+}
 
 .cl { font-size:0; line-height:0; clear:both; display:block; height:0; }
 
