@@ -1,46 +1,32 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Компания", 
+		"Каталог", 
 		"/about/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Сотрудники", 
+		"Жанры", 
 		"/company/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Диски", 
+		"Авторы", 
 		"/docs/", 
 		Array(), 
 		Array(), 
 		"CBXFeatures::IsFeatureEnabled('CommonDocuments')" 
 	),
 	Array(
-		"Сервисы", 
+		"О нас", 
 		"/services/", 
 		Array(), 
 		Array(), 
 		"" 
-	),
-	Array(
-		"Группы", 
-		"/workgroups/", 
-		Array(), 
-		Array(), 
-		"CBXFeatures::IsFeatureEnabled('Workgroups')" 
-	),
-	Array(
-		"CRM", 
-		"/crm/", 
-		Array(), 
-		Array(), 
-		"CBXFeatures::IsFeatureEnabled('crm') && CModule::IncludeModule('crm') && CCrmPerms::IsAccessEnabled()" 
 	)
 );
 ?>
